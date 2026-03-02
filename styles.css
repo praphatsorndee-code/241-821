@@ -1,0 +1,127 @@
+
+/* ตั้งค่าพื้นฐาน */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* กล่องคอนเทนเนอร์หลัก */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* หัวข้อ Register Form */
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* การจัดวางแบบ Flex (ใช้สำหรับแถว input) */
+.flex {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.form-input {
+    margin-bottom: 15px;
+}
+
+/* หัวข้อของแต่ละช่องกรอก */
+.header-form {
+    min-width: 80px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* ปรับแต่ง Input และ Textarea */
+.form, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form:focus, textarea:focus {
+    border-color: #4CAF50;
+}
+
+textarea {
+    height: 80px;
+    resize: vertical;
+    margin-top: 5px;
+}
+
+/* ปรับแต่งส่วนเลือกเพศและงานอดิเรก */
+.gender .flex {
+    gap: 20px;
+}
+
+.form-input > div {
+    margin-top: 5px;
+}
+
+/* ปุ่มกด */
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.message {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    display: none;
+}
+.message.success {
+    background-color: #4CAF50;
+    color: white;
+    display: block;
+}
+.message.danger {
+    background-color: #F44336;
+    color: white;
+    display: block;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
